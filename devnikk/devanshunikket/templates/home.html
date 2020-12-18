@@ -19,7 +19,23 @@
             /* Set width to 100% */
             margin: auto;
             min-height: 150px;
-            align: center
+        }
+        
+        #Contact {
+            padding: 10px;
+        }
+        
+        #Contact>.row {
+            padding: 15px;
+        }
+        
+        #Contact>.row>.row {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .bg-grey {
+            background-color: #f6f6f6;
         }
         /* Hide the carousel text when the screen is less than 600 pixels wide */
         
@@ -32,10 +48,11 @@
 </head>
 
 <body>
-    
+
     <!-- NAVABAR-->
-    <div class="container">
+    
         <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+            <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="{% static 'images\dn.png' %}" width="40" height="40" class="d-inline-block align-center" alt=""> DevNikk
             </a>
@@ -47,26 +64,26 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home
                   </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#latestProject">Latest Projects</a>
-                </li>
-                <li class="nav-item active">
-                <a class="nav-link" href="#About">About Us
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#latestProject">Latest Projects</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#About">About
                 </a>
-                </li>
-                <li class="nav-item active">
-                <a class="nav-link" href="#Services">Services
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Contact">Contact
                 </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#Portfolio">Portfolio
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Portfolio">Portfolio
                     </a>
-                </li>
-              </ul>
+                    </li>
+                </ul>
             </div>
-          </nav>
-    </div>
+        </div>
+        </nav>
     <!--Carousel-->
     <div id="lastestProject" class="container text-center">
         <h3>Latest Projects</h3><br>
@@ -149,8 +166,37 @@
         </div>
     </div><br>
 
+    <div id="Contact" class="container-fluid bg-grey">
+        <h3 class="text-center">CONTACT US</h3><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Mumbai, India</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +91 1515151515</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> devnikk@gmail.com</p>
+            </div>
+            <div class="col-sm-6 slideanim">
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default " type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="container-fluid text-center">
-        <p>Footer Text</p>
+        <span>&#169;</span>2020. All Rights Reserved to DevNikk <br>
+
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
