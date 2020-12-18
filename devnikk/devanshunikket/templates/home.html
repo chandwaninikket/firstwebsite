@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link href="{%static 'css\overlays.css'%}" rel="stylesheet" type="text/css">
     <style>
+        @media all and (min-width: 992px) {
+        .navbar .nav-item:hover .nav-link{ color: #fff;  }
+        .navbar .nav-item:hover .
+        }	
         .bg-1 {
             background-color: #CAEBF2;
         }
@@ -94,34 +98,32 @@
 
     <!-- NAVABAR-->
 
-    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-3">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-3" >
         <div class="container-fluid">
+            <!--LOGO-->
             <a class="navbar-brand" href="#">
                 <img src="{% static 'images\dn.png' %}" width="40" height="40" class="d-inline-block align-center" alt="">
             </a>
+            <!--TOGGLE NAVIGATION BUTTON-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                  </a>
-                    </li>
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#latestProject">Latest Projects</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#About">About
-                </a>
+                        </a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#Contact">Contact
-                </a>
+                        </a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#Portfolio">Portfolio
-                    </a>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -248,5 +250,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
-
 </html>
