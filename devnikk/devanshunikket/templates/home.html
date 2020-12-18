@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="{%static 'css\overlays.css'%}" rel="stylesheet" type="text/css">
     <style>
         .bg-1 {
             background-color: #CAEBF2;
@@ -162,26 +163,30 @@
         <div class="row justify-content-md-center">
             <!--CARD1-->
             <div class="card mb-3" style="max-width: 275px;">
-                <div class="col-md-8">
-                    <img src="{% static 'images\nikket.jpg' %}" alt="..." style="height:270px; width: 250px;">
+                <div class="col-md-8 containerl">
+                    <img src="{% static 'images\nikket.jpg' %}" alt="Nikk" style="height:270px; width: 250px;">
+                    <div class="overlayl">                    
+                        <div class="overtext">Text</div>
+                    </div>
                 </div>
                 <div class="col-md-10">
                     <div class="card-body">
                         <h5 class="card-title">Nikket Chandwani</h5>
-                        <p class="card-text">Text Goes Here</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-auto"></div>
             <!-- CARD2 -->
             <div class="card mb-3" style="max-width: 275px;">
-                <div class="col-md-8">
-                    <img src="{% static 'images\dev.png' %}" alt="..." style="height:270px; width: 250px;">
+                <div class="col-md-8 containerr">
+                    <img src="{% static 'images\dev.png' %}" alt="Dev" style="height:270px; width: 250px;">
+                    <div class="overlayr">
+                        <div class="overtext"> Text </div>
+                    </div>
                 </div>
                 <div class="col-md-10">
                     <div class="card-body">
                         <h5 class="card-title">Devanshu Jotwani</h5>
-                        <p class="card-text">Text goes here</p>
                     </div>
                 </div>
             </div>
@@ -237,7 +242,6 @@
     <!-- Footer, Copyright -->
     <footer class="container-fluid text-center bg-grey">
         Copyrights <span>&#169;</span> 2020. All Rights Reserved to DevNikk <br>
-
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
