@@ -10,17 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link href="{%static 'css\overlays.css'%}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/8b812b4534.js" crossorigin="anonymous"></script>
     <style>
         .bg-1 {
-            background-color: #CAEBF2;
+            background: linear-gradient(135deg, #B2FEFA, #56CCF2);
         }
         
         .bg-2 {
-            background-color: #66FCF1;
+            background: linear-gradient(135deg, #B2FEFA, #0ED2F7)
         }
         
         nav {
-            background: linear-gradient(135deg, #fdeff9, #ec38bc, #7303c0, #03001e);
+            background: linear-gradient(135deg, #fdeff9, #7303c0, #fdeff9);
         }
         
         body>.container-fluid,
@@ -29,6 +30,7 @@
             border-radius: 5px;
             margin-left: 3px;
             margin-right: 3px;
+            padding: 25px 5px 15px 5px;
         }
         
         nav {
@@ -165,7 +167,7 @@
             <div class="card mb-3" style="max-width: 275px;">
                 <div class="col-md-8 containerl">
                     <img src="{% static 'images\nikket.jpg' %}" alt="Nikk" style="height:270px; width: 250px;">
-                    <div class="overlayl">                    
+                    <div class="overlayl">
                         <div class="overtext">Text</div>
                     </div>
                 </div>
@@ -217,9 +219,9 @@
         <div class="row">
             <div class="col-sm-6">
                 <p>Contact us and we'll get back to you within 24 hours.</p>
-                <p><span class="glyphicon glyphicon-map-marker"></span> Mumbai, India</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +91 1515151515</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> devnikk@gmail.com</p>
+                <p><span class="fas fa-map-marked-alt"></span> Mumbai, India</p>
+                <p><span class="fas fa-phone-square-alt"></span> +91 1515151515</p>
+                <p><span class="fas fa-envelope"></span> devnikk@gmail.com</p>
             </div>
             <div class="col-sm-6 slideanim">
                 <div class="row" style="margin-bottom: 10px;">
