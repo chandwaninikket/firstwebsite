@@ -10,7 +10,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <style>
+        .bg-1 {
+            background-color: #CAEBF2;
+        }
+        
+        .bg-2 {
+            background-color: #66FCF1;
+        }
+        
+        body>.container-fluid,
+        nav {
+            margin-bottom: 5px;
+            border-radius: 5px;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+        
+        nav {
+            width: 100%;
+        }
+        
         footer {
+            border-radius: 5px;
+            margin-left: 3px;
+            margin-right: 3px;
             background-color: #f2f2f2;
             padding: 25px;
         }
@@ -29,9 +52,11 @@
         #Contact>.row {
             padding: 15px;
         }
-        #Contact>.h3{
+        
+        #Contact>.h3 {
             font-family: 'Raleway', sans-serif;
         }
+        
         #Contact>.row>.row {
             padding-bottom: 10px;
             margin-bottom: 10px;
@@ -41,24 +66,31 @@
             background-color: #f6f6f6;
         }
         /* Hide the carousel text when the screen is less than 600 pixels wide */
-        h1,h2,h3,h4,h5,h6{
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Montserrat', sans-serif;
+            color: #1F2833;
         }
+        
         @media (max-width: 600px) {
             .carousel-caption {
                 display: none;
             }
         }
-
     </style>
 </head>
 
 <body>
 
     <!-- NAVABAR-->
-    
-        <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
-            <div class="container">
+
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-1">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="{% static 'images\dn.png' %}" width="40" height="40" class="d-inline-block align-center" alt="">
             </a>
@@ -66,9 +98,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav d-flex ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home
+                <ul class="navbar-nav d-flex ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
                   </a>
                     </li>
                     <li class="nav-item">
@@ -89,9 +121,9 @@
                 </ul>
             </div>
         </div>
-        </nav>
+    </nav>
     <!--Carousel-->
-    <div id="lastestProject" class="container text-center">
+    <div id="latestProject" class="container-fluid text-center bg-2">
         <h3>Latest Projects</h3><br>
         <div class="row justify-content-md-center">
             <div class="col-sm-10 ">
@@ -119,11 +151,9 @@
             </div>
         </div>
     </div>
-    <br>
-    <hr>
     </div>
     <!--About Us Section-->
-    <div class="container text-center" id="About">
+    <div class="container-fluid text-center bg-1" id="About">
         <h3>About Us</h3><br>
         <div class="row justify-content-md-center">
             <!--CARD1-->
@@ -155,7 +185,7 @@
     </div>
     <!--Main Content-->
     <!--Port Folio Section-->
-    <div class="container text-center" id="Portfolio">
+    <div class="container-fluid text-center bg-2" id="Portfolio">
         <h3>Portfolio</h3><br>
         <div class="row">
             <div class="col-sm-4">
@@ -171,9 +201,9 @@
                 <p>Project 3</p>
             </div>
         </div>
-    </div><br>
-
-    <div id="Contact" class="container-fluid bg-grey">
+    </div>
+    <!-- Contact  -->
+    <div id="Contact" class="container-fluid bg-1">
         <h3 class="text-center">CONTACT US</h3><br>
         <div class="row">
             <div class="col-sm-6">
@@ -200,8 +230,8 @@
             </div>
         </div>
     </div>
-
-    <footer class="container-fluid text-center">
+    <!-- Footer, Copyright -->
+    <footer class="container-fluid text-center bg-grey">
         Copyrights <span>&#169;</span> 2020. All Rights Reserved to DevNikk <br>
 
     </footer>
