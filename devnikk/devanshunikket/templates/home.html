@@ -21,25 +21,25 @@
                 background-color: #38005e;
             }
         }
-        
+
         @media (max-width: 600px) {
             .carousel-caption {
                 display: none;
             }
         }
-        
+
         .bg-1 {
             background: linear-gradient(135deg, #B2FEFA, #56CCF2);
         }
-        
+
         .bg-2 {
             background: linear-gradient(135deg, #B2FEFA, #0ED2F7)
         }
-        
+
         nav {
             background: linear-gradient(135deg, #fdeff9, #7303c0, #fdeff9);
         }
-        
+
         body>.container-fluid,
         nav {
             margin-bottom: 5px;
@@ -48,16 +48,16 @@
             margin-right: 3px;
             padding: 25px 20px 15px 20px;
         }
-        
+
         nav {
             width: 100%;
         }
-        
+
         #lastestProject,
         #About {
             padding: 25px 5px 15px 5px;
         }
-        
+
         #Portfolio {
             padding: 25px 20px 15px 20px;
             margin-bottom: 5px;
@@ -65,14 +65,14 @@
             margin-left: 3px;
             margin-right: 3px;
         }
-        
+
         .carousel-inner img {
             width: 100%;
             /* Set width to 100% */
             margin: auto;
             min-height: 150px;
         }
-        
+
         #Contact {
             padding: 25px 20px 15px 20px;
             margin-bottom: 5px;
@@ -80,20 +80,20 @@
             margin-left: 3px;
             margin-right: 3px;
         }
-        
+
         #Contact>.row {
             padding: 15px;
         }
-        
+
         #Contact>.h3 {
             font-family: 'Raleway', sans-serif;
         }
-        
+
         #Contact>.row>.row {
             padding-bottom: 10px;
             margin-bottom: 10px;
         }
-        
+
         footer {
             border-radius: 5px;
             margin-left: 3px;
@@ -101,7 +101,7 @@
             background-color: #f2f2f2;
             padding: 25px;
         }
-        
+
         .bg-grey {
             background-color: #f6f6f6;
         }
@@ -115,15 +115,25 @@
             font-family: 'Montserrat', sans-serif;
             color: #1F2833;
         }
-        
+
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+            }
+            #About>.row{
+                justify-content: center;
+            }
+        }
+
+
         .navbar-light.navbar-toggler {
             border-color: (rgba(0, 0, 0, 0));
         }
-        
+
         .navbar-collapse {
             width: auto;
         }
-        
+
         @media(max-width:768px) {
             .navbar-collapse {
                 width: 100%;
@@ -136,7 +146,7 @@
 <body>
 
     <!-- NAVABAR-->
-
+    <!--s-->
     <nav class="navbar sticky-top navbar-expand-md navbar-light bg-3">
         <div class="container-fluid">
             <!--LOGO-->
@@ -150,7 +160,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent" ">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link " href="#latestProject ">Latest Projects 
+                        <a class="nav-link " href="#latestProject ">Latest Projects
                         </a>
                     </li>
                     <li class="nav-item active">
@@ -165,7 +175,7 @@
                         <a class="nav-link " href="#Contact">Contact Us
                         </a>
                     </li>
-                   
+
                 </ul>
             </div>
         </div>
@@ -205,10 +215,10 @@
         <h3 mb-6>About Us</h3>
         <div class="row justify-content-md-center ">
             <!--CARD1-->
-            <div class="card mb-3 " style="max-width: 275px; ">
-                <div class="col-md-8 containerl ">
+            <div class="card mb-3" style="max-width: 275px; ">
+                <div class="col-md-8 containerl">
                     <img class="mt-2 " src="{% static 'images\nikket.jpg' %}" alt="Nikk " style="height:270px; width: 250px;">
-                    <div class="overlayl ">
+                    <div class="overlayl">
                         <div class="overtext ">Text</div>
                     </div>
                 </div>
