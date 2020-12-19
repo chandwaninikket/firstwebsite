@@ -22,6 +22,12 @@
             }
         }
         
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+            }
+        }
+        
         .bg-1 {
             background: linear-gradient(135deg, #B2FEFA, #56CCF2);
         }
@@ -100,7 +106,6 @@
             background-color: #f6f6f6;
         }
         /* Hide the carousel text when the screen is less than 600 pixels wide */
-        
         h1,
         h2,
         h3,
@@ -109,12 +114,6 @@
         h6 {
             font-family: 'Montserrat', sans-serif;
             color: #1F2833;
-        }
-        
-        @media (max-width: 600px) {
-            .carousel-caption {
-                display: none;
-            }
         }
         
         .navbar-light.navbar-toggler {
@@ -149,21 +148,21 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent" ">
-                <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item active ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
                         <a class="nav-link " href="#latestProject ">Latest Projects 
                         </a>
                     </li>
-                    <li class="nav-item active ">
+                    <li class="nav-item active">
                         <a class="nav-link " href="#About ">About
                         </a>
                     </li>
-                    <li class="nav-item active ">
+                    <li class="nav-item active">
                         <a class="nav-link " href="#Portfolio ">Portfolio
                         </a>
                     </li>
-                    <li class="nav-item active ">
-                        <a class="nav-link " href="#Contact ">Contact Us
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#Contact">Contact Us
                         </a>
                     </li>
                    
@@ -172,28 +171,28 @@
         </div>
     </nav>
     <!--Carousel-->
-    <div id="latestProject " class="container-fluid text-center bg-2 ">
+    <div id="latestProject" class="container-fluid text-center bg-2">
         <h3>Latest Projects</h3><br>
-        <div class="row justify-content-md-center ">
+        <div class="row justify-content-md-center">
             <div class="col-sm-10 ">
-                <div id="carouselExampleControls " class="carousel slide " data-ride="carousel ">
-                    <div class="carousel-inner ">
-                        <div class="carousel-item active ">
-                            <img class="d-block w-100 " src="{% static 'images\carousel1.jpg' %} " alt="First slide ">
+                <div id="carouselExampleControls" class="carousel slide " data-ride="carousel ">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 " src="{% static 'images\carousel1.jpg' %}" alt="First slide">
                         </div>
-                        <div class="carousel-item ">
-                            <img class="d-block w-100 " src="{% static 'images\carousel2.jpg' %} " alt="Second slide ">
+                        <div class="carousel-item">
+                            <img class="d-block w-100 " src="{% static 'images\carousel2.jpg' %}" alt="Second slide">
                         </div>
-                        <div class="carousel-item ">
-                            <img class="d-block w-100 " src="{% static 'images\carousel3.jpg' %} " alt="Third slide ">
+                        <div class="carousel-item">
+                            <img class="d-block w-100 " src="{% static 'images\carousel3.jpg' %}" alt="Third slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
-                        <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <!--<span class="sr-only ">Previous</span>-->
                     </a>
-                    <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
-                        <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <!--<span class="sr-only ">Next</span>-->
                     </a>
                 </div>
@@ -202,13 +201,13 @@
     </div>
     </div>
     <!--About Us Section-->
-    <div class="container-fluid text-center bg-1 " id="About " >
+    <div class="container-fluid text-center bg-1 " id="About">
         <h3 mb-6>About Us</h3>
         <div class="row justify-content-md-center ">
             <!--CARD1-->
             <div class="card mb-3 " style="max-width: 275px; ">
                 <div class="col-md-8 containerl ">
-                    <img class="mt-2 " src="{% static 'images\nikket.jpg' %} " alt="Nikk " style="height:270px; width: 250px; ">
+                    <img class="mt-2 " src="{% static 'images\nikket.jpg' %}" alt="Nikk " style="height:270px; width: 250px;">
                     <div class="overlayl ">
                         <div class="overtext ">Text</div>
                     </div>
@@ -216,7 +215,7 @@
 
                 <div class="col-md-10 ">
                     <div class="card-body ">
-                        <h5 class="card-title text-nowrap ">Nikket Chandwani</h5>
+                        <h5 class="card-title text-nowrap">Nikket Chandwani</h5>
                     </div>
                 </div>
             </div>
@@ -224,14 +223,14 @@
             <!-- CARD2 -->
             <div class="card mb-3 " style="max-width: 275px; ">
                 <div class="col-md-8 containerr ">
-                    <img class="mt-2 " src="{% static 'images\dev.png' %} " alt="Dev " style="height:270px; width: 250px; ">
-                    <div class="overlayr ">
-                        <div class="overtext "> Text </div>
+                    <img class="mt-2 " src="{% static 'images\dev.png' %} " alt="Dev " style="height:270px; width: 250px;">
+                    <div class="overlayr">
+                        <div class="overtext"> Text </div>
                     </div>
                 </div>
-                <div class="col-md-10 ">
-                    <div class="card-body ">
-                        <h5 class="card-title text-nowrap ">Devanshu Jotwani</h5>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title text-nowrap">Devanshu Jotwani</h5>
                     </div>
                 </div>
             </div>
@@ -239,39 +238,39 @@
     </div>
     <!--Main Contentz-->
     <!--Port Folio Section-->
-    <div class="container-fluid text-center bg-2 Portfolio " id="Portfolio ">
+    <div class="container-fluid text-center bg-2" id="Portfolio">
         <h3>Portfolio</h3><br>
         <div class="row ">
             <div class="col-sm-4 ">
-                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image ">
+                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive" style="width:100% " alt="Image">
                 <p>Current Project</p>
             </div>
             <div class="col-sm-4 ">
-                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image ">
+                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive" style="width:100% " alt="Image">
                 <p>Project 2</p>
             </div>
             <div class="col-sm-4 ">
-                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image ">
+                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive" style="width:100% " alt="Image">
                 <p>Project 3</p>
             </div>
         </div>
         <div class="row ">
             <div class="col-sm-4 ">
-                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image ">
+                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image">
                 <p>Current Project</p>
             </div>
             <div class="col-sm-4 ">
-                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image ">
+                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image">
                 <p>Project 2</p>
             </div>
             <div class="col-sm-4 ">
-                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image ">
+                <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image">
                 <p>Project 3</p>
             </div>
         </div>
     </div>
     <!-- Contact  -->
-    <div id="Contact " class="container-fluid bg-1 ">
+    <div id="Contact" class="container-fluid bg-1 ">
         <h3 class="text-center ">CONTACT US</h3><br>
         <div class="row ">
             <div class="col-sm-6 ">
