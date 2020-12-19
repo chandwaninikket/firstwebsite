@@ -15,6 +15,7 @@
         @media all and (min-width: 992px) {
             .navbar .nav-item:hover .nav-link {
                 color: #fff;
+                border-radius: 10px;
             }
             .navbar .nav-item:hover .nav-link {
                 background-color: #38005e;
@@ -39,19 +40,24 @@
             border-radius: 5px;
             margin-left: 3px;
             margin-right: 3px;
-            padding: 25px 5px 15px 5px;
+            padding: 25px 20px 15px 20px;
         }
         
         nav {
             width: 100%;
         }
         
-        footer {
+        #lastestProject,
+        #About {
+            padding: 25px 5px 15px 5px;
+        }
+        
+        #Portfolio {
+            padding: 25px 20px 15px 20px;
+            margin-bottom: 5px;
             border-radius: 5px;
             margin-left: 3px;
             margin-right: 3px;
-            background-color: #f2f2f2;
-            padding: 25px;
         }
         
         .carousel-inner img {
@@ -62,7 +68,11 @@
         }
         
         #Contact {
-            padding: 10px;
+            padding: 25px 20px 15px 20px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            margin-left: 3px;
+            margin-right: 3px;
         }
         
         #Contact>.row {
@@ -76,6 +86,14 @@
         #Contact>.row>.row {
             padding-bottom: 10px;
             margin-bottom: 10px;
+        }
+        
+        footer {
+            border-radius: 5px;
+            margin-left: 3px;
+            margin-right: 3px;
+            background-color: #f2f2f2;
+            padding: 25px;
         }
         
         .bg-grey {
@@ -132,22 +150,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent" ">
                 <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item ">
-                        <a class="nav-link " href="#latestProject ">Latest Projects</a>
-
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="#latestProject ">Latest Projects 
+                        </a>
                     </li>
                     <li class="nav-item active ">
                         <a class="nav-link " href="#About ">About
                         </a>
                     </li>
                     <li class="nav-item active ">
-                        <a class="nav-link " href="#Contact ">Contact
-                        </a>
-                    </li>
-                    <li class="nav-item active ">
                         <a class="nav-link " href="#Portfolio ">Portfolio
                         </a>
                     </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link " href="#Contact ">Contact Us
+                        </a>
+                    </li>
+                   
                 </ul>
             </div>
         </div>
@@ -183,7 +202,7 @@
     </div>
     </div>
     <!--About Us Section-->
-    <div class="container-fluid text-center bg-1 " id="About ">
+    <div class="container-fluid text-center bg-1 " id="About " >
         <h3 mb-6>About Us</h3>
         <div class="row justify-content-md-center ">
             <!--CARD1-->
@@ -194,15 +213,10 @@
                         <div class="overtext ">Text</div>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div class="col-md-10 ">
-                    <div class="card-body ">
-                        <h5 class="card-title ">Nikket Chandwani</h5>
-=======
+
                 <div class="col-md-10 ">
                     <div class="card-body ">
                         <h5 class="card-title text-nowrap ">Nikket Chandwani</h5>
->>>>>>> 411525f3af2308a330e0417b600d34341060f343
                     </div>
                 </div>
             </div>
@@ -215,15 +229,9 @@
                         <div class="overtext "> Text </div>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div class="col-md-10 ">
-                    <div class="card-body ">
-                        <h5 class="card-title ">Devanshu Jotwani</h5>
-=======
                 <div class="col-md-10 ">
                     <div class="card-body ">
                         <h5 class="card-title text-nowrap ">Devanshu Jotwani</h5>
->>>>>>> 411525f3af2308a330e0417b600d34341060f343
                     </div>
                 </div>
             </div>
@@ -231,7 +239,7 @@
     </div>
     <!--Main Content-->
     <!--Port Folio Section-->
-    <div class="container-fluid text-center bg-2 " id="Portfolio ">
+    <div class="container-fluid text-center bg-2 Portfolio " id="Portfolio ">
         <h3>Portfolio</h3><br>
         <div class="row ">
             <div class="col-sm-4 ">
