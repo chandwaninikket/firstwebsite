@@ -4,7 +4,8 @@
   bottom: 0;
   left: 100%;
   right: 0;
-  background-color: #FF3B3F;
+  background-color: rgba(0,0,0,0.6);
+  background-color:rgba(0,0,0,0.6);
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -16,6 +17,10 @@
   width: 100%;
   left: 0;
 }
+.containerr:hover ~ .have1{
+  visibility: hidden;
+
+}
 
  /* LEFT */
  .overlayl {
@@ -23,18 +28,22 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #FF3B3F;
+    background-color:rgba(0,0,0,0.6);
+    background-color:rgba(0,0,0,0.6);
     overflow: hidden;
     width: 0;
     height: 100%;
     transition: .5s ease;
   }
-  
+
   .containerl:hover .overlayl {
     width: 100%;
   }
+  .containerl:hover .overlay1 ~ .have2{
+    visibility: hidden;
+  }
 .overtext {
-  color:#A9A9A9;
+  color:white;
   font-size: 20px;
   position: absolute;
   top: 50%;
