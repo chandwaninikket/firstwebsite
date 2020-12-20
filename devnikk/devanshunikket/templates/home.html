@@ -12,13 +12,10 @@
     <link href="{%static 'css\overlays.css'%}" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/8b812b4534.js" crossorigin="anonymous"></script>
     <style>
-    *{
-      box-sizing: border-box;
-     }
-     body{
-       width: 100%;
-     }
-      @media all and (min-width: 992px) {
+        .fab.fa-linkedin,.fab.fa-github,.far.fa-file{
+            font-size: 2.5rem;
+        }
+        @media all and (min-width: 992px) {
             .navbar .nav-item:hover .nav-link {
                 color: #fff;
                 border-radius: 10px;
@@ -156,7 +153,7 @@
 
     <!-- NAVABAR-->
     <!--s-->
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-3">
+    <nav class="navbar navbar-expand-md navbar-light bg-3">
         <div class="container-fluid">
             <!--LOGO-->
             <a class="navbar-brand" href="#">
@@ -235,21 +232,31 @@
                 <div class="col-md-10 ">
                     <div class="card-body have1 ">
                         <h5 class="card-title text-nowrap">Nikket Chandwani</h5>
+                        <p class="d-flex justify-content-evenly">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="far fa-file"></i>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-auto "></div>
             <!-- CARD2 -->
-            <div class="card mb-3 " style="max-width: 275px; ">
-                <div class="col-md-8 containerr ">
+            <div class="card mb-3 " style="max-width: 275px;">
+                <div class="col-md-8 containerr">
                     <img class="mt-2 " src="{% static 'images\dev.png' %} " alt="Dev " style="height:270px; width: 250px;">
                     <div class="overlayr">
                         <div class="overtext"> Text </div>
                     </div>
                 </div>
-                <div class="col-md-10" have2>
+                <div class="col-md-10">
                     <div class="card-body">
                         <h5 class="card-title text-nowrap">Devanshu Jotwani</h5>
+                        <p class="d-flex justify-content-evenly">
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-github"></i>
+                            <i class="far fa-file"></i>
+                            </p>
                     </div>
                 </div>
             </div>
