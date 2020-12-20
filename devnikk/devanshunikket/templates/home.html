@@ -12,7 +12,13 @@
     <link href="{%static 'css\overlays.css'%}" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/8b812b4534.js" crossorigin="anonymous"></script>
     <style>
-        @media all and (min-width: 992px) {
+    *{
+      box-sizing: border-box;
+     }
+     body{
+       width: 100%;
+     }
+      @media all and (min-width: 992px) {
             .navbar .nav-item:hover .nav-link {
                 color: #fff;
                 border-radius: 10px;
@@ -25,6 +31,9 @@
         @media (max-width: 600px) {
             .carousel-caption {
                 display: none;
+            }
+            footer{
+              font-size: 10px;
             }
         }
 
