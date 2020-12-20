@@ -21,6 +21,9 @@
   visibility: hidden;
 
 }
+.containerr:hover ~ .can2 > div{
+  visibility:hidden;
+}
 
  /* LEFT */
  .overlayl {
@@ -39,8 +42,8 @@
   .containerl:hover .overlayl {
     width: 100%;
   }
-  .containerl:hover .overlay1 ~ .have2{
-    visibility: hidden;
+  .containerl:hover ~ .can1 > div{
+    visibility:collapse;
   }
 .overtext {
   color:white;
