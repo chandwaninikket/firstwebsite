@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@800&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link href="{%static 'css\overlays.css'%}" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/8b812b4534.js" crossorigin="anonymous"></script>
+
     <style>
         .fab.fa-linkedin,.fab.fa-github,.fab.fa-instagram{
             font-size: 2.5rem;
@@ -288,10 +289,8 @@
                 <p>Project 3</p>
             </div>
         </div>
-        <div>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#showmore" aria-expanded="false" aria-controls="#showmore">Show More</button>
-        </div>
-        <div class="row collapse showmore" id="showmore">
+
+        <div class="row tog" >
                 <div class="col-sm-4">
                     <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image">
                     <p>Current Project</p>
@@ -304,7 +303,13 @@
                     <img src="https://placehold.it/150x80?text=IMAGE " class="img-responsive " style="width:100% " alt="Image">
                     <p>Project 3</p>
                 </div>
-            </div>
+          </div>
+          <div>
+              <button class="btn btn-primary" id="showmore" type="button" >SHOW MORE</button>
+          </div>
+          <div>
+              <button class="btn btn-primary" id="showless" type="button" >SHOW LESS</button>
+          </div>
     </div>
     <!-- Contact  -->
     <div id="Contact" class="container-fluid bg-1 ">
@@ -342,6 +347,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="{%static 'js\home.js'%}"> </script>
 </body>
 
 </html>
