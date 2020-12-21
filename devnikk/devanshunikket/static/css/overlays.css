@@ -17,10 +17,7 @@
   width: 100%;
   left: 0;
 }
-.containerr:hover ~ .have1{
-  visibility: hidden;
 
-}
 .containerr:hover ~ .can2 > div{
   visibility:hidden;
 }
